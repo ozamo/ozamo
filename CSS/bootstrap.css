@@ -11,7 +11,56 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+ #imgtop{
+   top:0;
+ }
+ #nav {
+ 	position: relative;
+ 	margin: 50px;
+ 	width: 360px;
+ }
+ #navul {
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+ #navulli {
+   /* Sub Menu */
+ }
+ #navullia {
+ 	display: block;
+ 	background: #ebebeb;
+ 	padding: 10px 15px;
+ 	color: #333;
+ 	text-decoration: none;
+ 	-webkit-transition: 0.2s linear;
+ 	-moz-transition: 0.2s linear;
+ 	-ms-transition: 0.2s linear;
+ 	-o-transition: 0.2s linear;
+ 	transition: 0.2s linear;
+ }
+ #navullia:hover {
+ 	background: #f8f8f8;
+ 	color: #515151;
+ }
+ #navullia .fa {
+ 	width: 16px;
+ 	text-align: center;
+ 	margin-right: 5px;
+ 	float:right;
+ }
+ #navulul {
+ 	background-color:#ebebeb;
+ }
+ #navulliullia {
+ 	background: #f8f8f8;
+ 	border-left: 4px solid transparent;
+ 	padding: 10px 20px;
+ }
+ #navulliullia:hover {
+ 	background: #ebebeb;
+ 	border-left: 4px solid #3498db;
+ }
 .Principal{
   background: ;
   position: fixed;
@@ -29,7 +78,7 @@
   left: 0%;
   width: 100%;
   height: 10%;
-  background-color: white; 
+  background-color: white;
   border:solid 0px yellow;
   z-index: 2;
 }
@@ -39,7 +88,7 @@
   left: 0%;
   width: 100%;
   height:90%;
-  background-color: white; 
+  background-color: white;
   border:solid 0px yellow;
   z-index: 2;
 
@@ -50,11 +99,11 @@
   left: 0%;
   width: 100%;
   height: 5%;
-  background-color: #2FA4E7 ; 
+  background-color: #2FA4E7 ;
   border:solid 0px yellow;
   z-index: 2;
 
-} 
+}
 .BarraDeBusqueda{
   background:  white;
   position: absolute;
@@ -4745,7 +4794,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .navbar .container,

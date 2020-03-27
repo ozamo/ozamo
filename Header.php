@@ -11,7 +11,7 @@
                <div class="Menu">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                          <a class="navbar-brand" href="#">
-                              <img alt="Imagen rota" src="Imagenes/Logos.png" width="50%"/>
+                              <img id='imgtop' alt="Imagen rota" src="Imagenes/Logos.png" width="50%"/>
                          </a>
                          <button aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarColor01" data-toggle="collapse" type="button">
                               <span class="navbar-toggler-icon">
@@ -19,7 +19,7 @@
                          </button>
                          <div class="collapse navbar-collapse" id="navbarColor01">
                               <ul class="navbar-nav mr-auto">
-                                   <li class="nav-item active">
+                                   <li class="nav-item ">
                                         <h1>
                                              <a class="nav-link" href="index.php">
                                                   Inicio
@@ -41,10 +41,5 @@
                     </nav>
                </div>
           </div>
-          <div class="Contenido">
-               <div class="BarraDeBusqueda">
-                    <p style="color: black;">
-                         Aqui va el menu
-                    </p>
-               </div>
-      
+
+                    <?php include 'HeaderLeft.php'; ?>
