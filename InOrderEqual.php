@@ -1,12 +1,16 @@
 <?php
-
-  include ('Header.php');
   include ('Programas/inOrderEqual.php');
-
+  include ('Header.php');
+  include ('data/dataInorderEquals.php')
 ?>
+<<<<<<< HEAD
 <div class="Programa">
 
      <form name="formaction" action="inOrderEqual.php">
+=======
+<div class="Programaa">
+     <form name="formaction" action="inOrderEqual.php?E=1">
+>>>>>>> 7c6724b6aa03f1a37ab8f87761dc1bd29967d89d
           <fieldset>
                <h1>
                     <legend>
@@ -69,8 +73,38 @@
      </form>
 </div>
 <div class="AyudaPrograma">
+  <form action="inOrderEqual.phpE=?" name='generico'>
+          <fieldset>
 
+               <div class="form-group">
+                    <label for="exampleTextarea">
+                         Area de texto de Descripcion y Soluciones
+                    </label>
+                    <textarea  value='<?php echo $valor?>' class="form-control" id="exampleTextarea"  rows="3">
+                    </textarea>
+                    <?php
+                    $problemname='inOrderEqual';
+                    $valor=' ';
+                      $varbuton=isset($_GET['E']);
+                      if($varbuton){
+                        if ($varbuton==1) {
+                          $valor=$objeData->solucioes($problemname);
+                        }
+                        if ($varbuton==2) {
+                          $valor=$objeData->descripcion($problemname);
+                        }
+                        }
+                        ?>
+
+                    <button class="btn btn-primary" type="post" formaction="inOrderEqual.php?E=?" value="1" id='buttonA'>
+                         Soluciones
+                    </button>
+                    <button class="btn btn-primary" type="post" formaction="inOrderEqual.php" value="2" id='buttonA'>
+                         Descripcion
+                    </button>
+               </div>
+          </fieldset>
+     </form>
 </div>
 <div class="Pie">
-
 </div>

@@ -11,7 +11,7 @@
                <div class="Menu">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                          <a class="navbar-brand" href="#">
-                              <img id='imgtop' alt="Imagen rota" src="Imagenes/Logos.png" width="50%"/>
+                              <img id='imgtop' alt="Imagen rota" src="Imagenes/Logos.png" width="40%"/>
                          </a>
                          <button aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarColor01" data-toggle="collapse" type="button">
                               <span class="navbar-toggler-icon">
@@ -42,4 +42,6 @@
                </div>
           </div>
 
-                    <?php include 'HeaderLeft.php'; ?>
+                    <?php
+                      include 'HeaderLeft.php';
+                     ?>
