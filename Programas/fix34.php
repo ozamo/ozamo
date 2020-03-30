@@ -10,30 +10,32 @@ class fix34
 			{
 				# code...
 			}
-public function profix34($nums =array()) {
-    $i= 0;
+public function profix34($nums="") {
+  $nums=str_split($nums);
+	$i= 0;
 
-    while($i < strlen($nums) && $nums[$i] != 3)
-        $i++;
+	while($i < count($nums) && $nums[$i] != 3)
+			$i++;
 
-    $j = $i + 1;
+	$j = $i + 1;
 
-    while($j < strlen($nums) && $nums[$i] != 4)
-        $j++;
+	while($j < count($nums) && $nums[$i] != 4)
+			$j++;
 
-    while($i < strlen($nums)) {
-        if($nums[$i] == 3) {
-            $temp = $nums[$i+1];
-            $nums[$i+1] = $nums[$j];
-            $nums[$j] = $temp;
+	while($i < count($nums)) {
+			echo var_dump($nums);
+			if($nums[$i] == 3) {
+					$temp = $nums[$i+1];
+					$nums[$i+1] = $nums[$j];
+					$nums[$j] = $temp;
 
-            while($j < strlen($nums) && $nums[$j] != 4)
-                $j++;
-        }
-        $i++;
-    }
+					while($j < count($nums) && $nums[$i] != 4)
+							$j++;
+			}
+			$i++;
+	}
 
-    return $nums;
+	return $nums;
 }}
-$objeWS = new fix34();
+$objefx = new fix34();
 ?>
