@@ -91,7 +91,7 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#">noTeenSum</a>
+      <a href="noTeenSum.php">noTeenSum</a>
     </div>
     <button class="dropdown-btn">Map2
       <i class="fa fa-caret-down"></i>
@@ -109,7 +109,7 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#">fix34</a>
+      <a href="fix34.php">fix34</a>
     </div>
 </div>
 
