@@ -12,7 +12,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  #imgtop{
-   top:0;
+   top:0%;
  }
  #nav {
  	position: relative;
@@ -61,8 +61,20 @@
  	background: #ebebeb;
  	border-left: 4px solid #3498db;
  }
+ .Programaa{
+   background: white;
+   position: absolute;
+   top:10%;
+   left: 10%;
+   width: 45%;
+   height: 85%;
+
+   border:solid 0px white;
+   z-index: 3;
+ }
+
 .Principal{
-  background: ;
+
   position: fixed;
   top:0%;
   left: 0%;
@@ -115,22 +127,16 @@
   z-index: 3;
 }
 
-.Programa{
-  background: white;
-  position: absolute;
-  left: 10%;
-  width: 45%;
-  height: 95%;
-  border:solid 0px white;
-  z-index: 3;
-}
+
 
 .AyudaPrograma{
   background: white;
   position: absolute;
+  top:10%;
   left: 55%;
   width: 45%;
-  height: 95%;
+  height: 85%;
+
   border:solid 0px white;
   z-index: 3;
 }
