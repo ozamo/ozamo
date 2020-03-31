@@ -34,7 +34,7 @@ public function profix34($nums="") {
 			}
 			$i++;
 	}
-
+$nums=implode(" ",$nums);
 	return $nums;
 }}
 $objefx = new fix34();
