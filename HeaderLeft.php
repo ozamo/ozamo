@@ -103,7 +103,7 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#">withoutString</a>
+      <a href="withoutString.php">withoutString</a>
     </div>
     <button class="dropdown-btn">Array3
       <i class="fa fa-caret-down"></i>

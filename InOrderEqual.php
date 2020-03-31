@@ -2,11 +2,9 @@
   include ('Programas/inOrderEqual.php');
   include ('Header.php');
 ?>
-<div class="Programa ">
 
-     <form name="formaction" action="inOrderEqual.php">
-<div class="Programaa ">
-     <form name="formaction " action="inOrderEqual.php?E=1">
+<div class="Programa ">
+     <form name="formaction " action="inOrderEqual.php">
           <fieldset>
                <h1 class="CentrarItems">
                     <legend>
