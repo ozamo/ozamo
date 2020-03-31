@@ -2,39 +2,40 @@
   include ('Programas/inOrderEqual.php');
   include ('Header.php');
 ?>
-<div class="Programa">
+<div class="Programa ">
 
      <form name="formaction" action="inOrderEqual.php">
-<div class="Programaa">
-     <form name="formaction" action="inOrderEqual.php?E=1">
+<div class="Programaa ">
+     <form name="formaction " action="inOrderEqual.php?E=1">
           <fieldset>
-               <h1>
+               <h1 class="CentrarItems">
                     <legend>
                          Programa
                     </legend>
                </h1>
-               <div class="form-group">
+               <div class="form-group CentarItemsDiv">
                     <label class="col-form-label" for="inputDefault">
                          Entrada de Datos 1
                     </label>
-                    <input class="form-control" value=0 name="valor1" placeholder="Default input" type="text">
+
+                    <input class="form-control " value=0 name="valor1" placeholder="Default input" type="text">
                     </input>
                </div>
-               <div class="form-group">
+               <div class="form-group CentarItemsDiv">
                     <label class="col-form-label" for="inputDefault">
                          Entrada de Datos 2
                     </label>
                     <input class="form-control" value=0 name="valor2" placeholder="Default input" type="text">
                     </input>
                   </div>
-                    <div class="form-group">
+                    <div class="form-group CentarItemsDiv">
                          <label class="col-form-label" for="inputDefault">
                               Entrada de Datos 3
                          </label>
                          <input class="form-control"value=0 name="valor3" placeholder="Default input" type="text">
                          </input>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group CentarItemsDiv">
                          <label class="col-form-label" for="inputDefault">
                               Bandera
                          </label>
@@ -54,16 +55,20 @@
                   $Result=$objeIOE->probInOrderEqual($valor1,$valor2,$valor3,$bandera);
                 }
               ?>
-              <button class="btn btn-primary" type="post">
-                   Procesar
-              </button>
-               <br><legend>
-                 <?php
-
-                   echo $Result;
-
-                 ?>
-                </legend>
+              <div class="CentarItemsDiv">
+                <button class="btn btn-primary CentarItems" type="post">
+                     Procesar
+                </button>
+              </div>
+               <br>
+               <div class="CentarItemsDiv2">
+                 <div class="card border-light mb-3 " style="max-width: 20rem;">
+                    <div class="card-header">Resultados</div>
+                      <div class="card-body">
+                          <h4 class="card-title"> <?php echo $Result;?></h4>
+                      </div>
+                </div>
+               </div>
 
           </fieldset>
      </form>
