@@ -1,16 +1,12 @@
 <?php
   include ('Programas/inOrderEqual.php');
   include ('Header.php');
-  include ('data/dataInorderEquals.php')
 ?>
-<<<<<<< HEAD
 <div class="Programa">
 
      <form name="formaction" action="inOrderEqual.php">
-=======
 <div class="Programaa">
      <form name="formaction" action="inOrderEqual.php?E=1">
->>>>>>> 7c6724b6aa03f1a37ab8f87761dc1bd29967d89d
           <fieldset>
                <h1>
                     <legend>
