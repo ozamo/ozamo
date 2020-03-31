@@ -79,28 +79,22 @@
                     <label for="exampleTextarea">
                          Area de texto de Descripcion y Soluciones
                     </label>
-                    <textarea  value='<?php echo $valor?>' class="form-control" id="exampleTextarea"  rows="3">
-                    </textarea>
-                    <?php
-                    $problemname='inOrderEqual';
-                    $valor=' ';
-                      $varbuton=isset($_GET['E']);
-                      if($varbuton){
-                        if ($varbuton==1) {
-                          $valor=$objeData->solucioes($problemname);
-                        }
-                        if ($varbuton==2) {
-                          $valor=$objeData->descripcion($problemname);
-                        }
-                        }
-                        ?>
 
-                    <button class="btn btn-primary" type="post" formaction="inOrderEqual.php?E=?" value="1" id='buttonA'>
-                         Soluciones
-                    </button>
-                    <button class="btn btn-primary" type="post" formaction="inOrderEqual.php" value="2" id='buttonA'>
-                         Descripcion
-                    </button>
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header">Descripcion</div>
+                      <div class="card-body">
+                        <h4 class="card-title">Light card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header">Posibles Soluciones</div>
+                      <div class="card-body">
+                        <h4 class="card-title">Light card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
                </div>
           </fieldset>
      </form>
