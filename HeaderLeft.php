@@ -97,7 +97,7 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#">pairs</a>
+      <a href="pairs.php">pairs</a>
     </div>
     <button class="dropdown-btn">String3
       <i class="fa fa-caret-down"></i>

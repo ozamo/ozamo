@@ -1,12 +1,12 @@
 <?php
 
   include ('Header.php');
-  include ('Programas/fix34.php');
+  include ('Programas/pairs.php');
 
 ?>
 <div class="Programaa">
 
-     <form name="formaction" action="fix34.php?E=1">
+     <form name="formaction" action="pairs.php?E=1">
           <fieldset>
                <h1>
                     <legend>
@@ -26,7 +26,7 @@
 
                 if(isset($_GET['valor1'])){
                   $valor1=$_GET['valor1'];
-                  $Result=$objefx->profix34($valor1);
+                  $Result=$objePa->proPairs($valor1);
                 }
               ?><button class="btn btn-primary" type="post">
                    Procesar
