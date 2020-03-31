@@ -1,44 +1,39 @@
 <?php
   include ('Programas/inOrderEqual.php');
   include ('Header.php');
-  include ('data/dataInorderEquals.php')
 ?>
-<<<<<<< HEAD
-<div class="Programa">
 
-     <form name="formaction" action="inOrderEqual.php">
-=======
-<div class="Programaa">
-     <form name="formaction" action="inOrderEqual.php?E=1">
->>>>>>> 7c6724b6aa03f1a37ab8f87761dc1bd29967d89d
+<div class="Programa ">
+     <form name="formaction " action="inOrderEqual.php">
           <fieldset>
-               <h1>
+               <h1 class="CentrarItems">
                     <legend>
                          Programa
                     </legend>
                </h1>
-               <div class="form-group">
+               <div class="form-group CentarItemsDiv">
                     <label class="col-form-label" for="inputDefault">
                          Entrada de Datos 1
                     </label>
-                    <input class="form-control" value=0 name="valor1" placeholder="Default input" type="text">
+
+                    <input class="form-control " value=0 name="valor1" placeholder="Default input" type="text">
                     </input>
                </div>
-               <div class="form-group">
+               <div class="form-group CentarItemsDiv">
                     <label class="col-form-label" for="inputDefault">
                          Entrada de Datos 2
                     </label>
                     <input class="form-control" value=0 name="valor2" placeholder="Default input" type="text">
                     </input>
                   </div>
-                    <div class="form-group">
+                    <div class="form-group CentarItemsDiv">
                          <label class="col-form-label" for="inputDefault">
                               Entrada de Datos 3
                          </label>
                          <input class="form-control"value=0 name="valor3" placeholder="Default input" type="text">
                          </input>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group CentarItemsDiv">
                          <label class="col-form-label" for="inputDefault">
                               Bandera
                          </label>
@@ -58,16 +53,20 @@
                   $Result=$objeIOE->probInOrderEqual($valor1,$valor2,$valor3,$bandera);
                 }
               ?>
-              <button class="btn btn-primary" type="post">
-                   Procesar
-              </button>
-               <br><legend>
-                 <?php
-
-                   echo $Result;
-
-                 ?>
-                </legend>
+              <div class="CentarItemsDiv">
+                <button class="btn btn-primary CentarItems" type="post">
+                     Procesar
+                </button>
+              </div>
+               <br>
+               <div class="CentarItemsDiv2">
+                 <div class="card border-light mb-3 " style="max-width: 20rem;">
+                    <div class="card-header">Resultados</div>
+                      <div class="card-body">
+                          <h4 class="card-title"> <?php echo $Result;?></h4>
+                      </div>
+                </div>
+               </div>
 
           </fieldset>
      </form>
@@ -80,28 +79,22 @@
                     <label for="exampleTextarea">
                          Area de texto de Descripcion y Soluciones
                     </label>
-                    <textarea  value='<?php echo $valor?>' class="form-control" id="exampleTextarea"  rows="3">
-                    </textarea>
-                    <?php
-                    $problemname='inOrderEqual';
-                    $valor=' ';
-                      $varbuton=isset($_GET['E']);
-                      if($varbuton){
-                        if ($varbuton==1) {
-                          $valor=$objeData->solucioes($problemname);
-                        }
-                        if ($varbuton==2) {
-                          $valor=$objeData->descripcion($problemname);
-                        }
-                        }
-                        ?>
 
-                    <button class="btn btn-primary" type="post" formaction="inOrderEqual.php?E=?" value="1" id='buttonA'>
-                         Soluciones
-                    </button>
-                    <button class="btn btn-primary" type="post" formaction="inOrderEqual.php" value="2" id='buttonA'>
-                         Descripcion
-                    </button>
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header">Descripcion</div>
+                      <div class="card-body">
+                        <h4 class="card-title">Light card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header">Posibles Soluciones</div>
+                      <div class="card-body">
+                        <h4 class="card-title">Light card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
                </div>
           </fieldset>
      </form>
