@@ -43,9 +43,7 @@
                            <option value="false">false</option>
                            <option value="true">true</option>
                          </select>
-
-
-              </div>
+                  </div>
               <div>
               <?php
               $Result=' ';
@@ -70,7 +68,7 @@
                       <div class="card-body">
                           <h4 class="card-title"> <?php echo $Result;?></h4>
                       </div>
-                </div>
+                  </div>
                </div>
 
           </fieldset>
