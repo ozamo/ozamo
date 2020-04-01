@@ -1,6 +1,7 @@
 <?php
-  include ('Programas/inOrderEqual.php');
-  include ('Header.php');
+  include_once ('Programas/inOrderEqual.php');
+  include_once ('mongoDatos.php');
+  include_once ('Header.php');
 ?>
 
 <div class="Programa ">
@@ -16,29 +17,33 @@
                          Entrada de Datos 1
                     </label>
 
-                    <input class="form-control " value=0 name="valor1" placeholder="Default input" type="text">
+                    <input class="form-control " value=0 name="valor1" placeholder="Default input" type="number">
                     </input>
                </div>
                <div class="form-group CentarItemsDiv">
                     <label class="col-form-label" for="inputDefault">
                          Entrada de Datos 2
                     </label>
-                    <input class="form-control" value=0 name="valor2" placeholder="Default input" type="text">
+                    <input class="form-control" value=0 name="valor2" placeholder="Default input" type="number">
                     </input>
                   </div>
                     <div class="form-group CentarItemsDiv">
                          <label class="col-form-label" for="inputDefault">
                               Entrada de Datos 3
                          </label>
-                         <input class="form-control"value=0 name="valor3" placeholder="Default input" type="text">
+                         <input class="form-control"value=0 name="valor3" placeholder="Default input" type="number">
                          </input>
                     </div>
                     <div class="form-group CentarItemsDiv">
                          <label class="col-form-label" for="inputDefault">
                               Bandera
-                         </label>
-                         <input class="form-control" value='false' name="bandera" placeholder="Default input" type="text">
-                         </input>
+                         </label><br/>
+
+                         <select class="form-control" name="bandera" >
+                           <option value="false">false</option>
+                           <option value="true">true</option>
+                         </select>
+
 
               </div>
               <div>
@@ -76,24 +81,43 @@
           <fieldset>
 
                <div class="form-group">
-                    <label for="exampleTextarea">
-                         Area de texto de Descripcion y Soluciones
-                    </label>
-
                     <div class="card border-light mb-3" style="max-width: 20rem;">
-                      <div class="card-header">Descripcion</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Light card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
+                      <div class="card-header"><h4 class="card-title">Descripcion</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='inOrderEqual';
+                        $mongoField='_descripcion';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
+
                     </div>
                     <br>
                     <div class="card border-light mb-3" style="max-width: 20rem;">
-                      <div class="card-header">Posibles Soluciones</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Light card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
+                      <div class="card-header"><h4 class="card-title">Posibles Soluciones</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='inOrderEqual';
+                        $mongoField='_PosiblesSoluciones';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header"><h4 class="card-title">Clase</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='inOrderEqual';
+                        $mongoField='_clase';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
                     </div>
                </div>
           </fieldset>

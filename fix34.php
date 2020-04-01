@@ -1,6 +1,7 @@
 <?php
   include ('Programas/fix34.php');
   include ('Header.php');
+  include_once ('mongoDatos.php');
 ?>
 
 <div class="Programaa">
@@ -53,24 +54,43 @@
           <fieldset>
 
                <div class="form-group">
-                    <label for="exampleTextarea">
-                         Area de texto de Descripcion y Soluciones
-                    </label>
+                    <div class="card border-light mb-3" style="max-width: 25rem;">
+                      <div class="card-header"><h4 class="card-title">Descripcion</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='fix34';
+                        $mongoField='_descripcion';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
 
-                    <div class="card border-light mb-3" style="max-width: 20rem;">
-                      <div class="card-header">Descripcion</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Light card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
                     </div>
                     <br>
-                    <div class="card border-light mb-3" style="max-width: 20rem;">
-                      <div class="card-header">Posibles Soluciones</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Light card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header"><h4 class="card-title">Posibles Soluciones</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='fix34';
+                        $mongoField='_PosiblesSoluciones';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header"><h4 class="card-title">Clase</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='fix34';
+                        $mongoField='_clase';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
                     </div>
                </div>
           </fieldset>

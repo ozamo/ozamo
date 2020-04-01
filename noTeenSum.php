@@ -1,8 +1,7 @@
 <?php
-
-  include ('Header.php');
-  include ('Programas/noTeenSum.php');
-
+  include_once ('Programas/noTeenSum.php');
+  include_once ('mongoDatos.php');
+  include_once ('Header.php');
 ?>
 <div class="Programa">
 
@@ -60,8 +59,51 @@
      </form>
 </div>
 <div class="AyudaPrograma">
+  <form action="noTeenSum.phpE=?" name='generico'>
+          <fieldset>
 
+               <div class="form-group">
+                    <div class="card border-light mb-3" style="max-width: 40rem;">
+                      <div class="card-header"><h4 class="card-title">Descripcion</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='noTeenSum';
+                        $mongoField='_descripcion';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
+
+                    </div>
+                    <br>
+                    <div class="card border-light mb-3" style="max-width: 15rem;">
+                      <div class="card-header"><h4 class="card-title">Posibles Soluciones</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='noTeenSum';
+                        $mongoField='_PosiblesSoluciones';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card border-light mb-3" style="max-width: 20rem;">
+                      <div class="card-header"><h4 class="card-title">Clase</h4>
+                      <p class="card-text">
+                        <?php
+                        $nombreProblema='noTeenSum';
+                        $mongoField='_clase';
+                        $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                        echo $Descripcion;
+                         ?>
+                      </p>
+                    </div>
+                    </div>
+               </div>
+          </fieldset>
+     </form>
 </div>
 <div class="Pie">
-
 </div>

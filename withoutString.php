@@ -1,5 +1,5 @@
 <?php
-
+  include_once ('mongoDatos.php');
   include ('Header.php');
   include ('Programas/withoutString.php');
 
@@ -51,9 +51,52 @@
           </fieldset>
      </form>
    </div>
-<div class="AyudaPrograma">
+   <div class="AyudaPrograma">
+     <form action="withoutString.phpE=?" name='generico'>
+             <fieldset>
 
-</div>
-<div class="Pie">
+                  <div class="form-group">
+                       <div class="card border-light mb-3" style="max-width: 20rem;">
+                         <div class="card-header"><h4 class="card-title">Descripcion</h4>
+                         <p class="card-text">
+                           <?php
+                           $nombreProblema='withoutString';
+                           $mongoField='_descripcion';
+                           $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                           echo $Descripcion;
+                            ?>
+                         </p>
+                       </div>
 
-</div>
+                       </div>
+                       <br>
+                       <div class="card border-light mb-3" style="max-width: 25rem;">
+                         <div class="card-header"><h4 class="card-title">Posibles Soluciones</h4>
+                         <p class="card-text">
+                           <?php
+                           $nombreProblema='withoutString';
+                           $mongoField='_PosiblesSoluciones';
+                           $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                           echo $Descripcion;
+                            ?>
+                         </p>
+                       </div>
+                     </div>
+                     <div class="card border-light mb-3" style="max-width: 20rem;">
+                         <div class="card-header"><h4 class="card-title">Clase</h4>
+                         <p class="card-text">
+                           <?php
+                           $nombreProblema='withoutString';
+                           $mongoField='_clase';
+                           $Descripcion=$objeData->recuDatos($nombreProblema,$mongoField);
+                           echo $Descripcion;
+                            ?>
+                         </p>
+                       </div>
+                       </div>
+                  </div>
+             </fieldset>
+        </form>
+   </div>
+   <div class="Pie">
+   </div>
