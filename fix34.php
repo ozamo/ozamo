@@ -9,7 +9,7 @@
           <fieldset>
                <h1 class="CentrarItems">
                     <legend>
-                         Programa
+                         fix34
                     </legend>
                </h1>
                <div class="form-group CentarItemsDiv">
