@@ -10,7 +10,7 @@ class fix34
 			{
 				# code...
 			}
-public function profix34($nums="") {
+public function profix34($nums=" ") {
   $nums=str_split($nums);
 	$i= 0;
 
@@ -19,11 +19,11 @@ public function profix34($nums="") {
 
 	$j = $i + 1;
 
-	while($j < count($nums) && $nums[$i] != 4)
+	while($j < count($nums) && $nums[$j] != 4)
 			$j++;
 
 	while($i < count($nums)) {
-			echo var_dump($nums);
+		
 			if($nums[$i] == 3) {
 					$temp = $nums[$i+1];
 					$nums[$i+1] = $nums[$j];
