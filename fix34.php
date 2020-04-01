@@ -4,7 +4,7 @@
   include_once ('mongoDatos.php');
 ?>
 
-<div class="Programaa">
+<div class="Programa">
      <form name="formaction " action="fix34.php">
           <fieldset>
                <h1 class="CentrarItems">
