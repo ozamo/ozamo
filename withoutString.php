@@ -8,9 +8,9 @@
 
      <form name="formaction" action="withoutString.php">
           <fieldset>
-               <h1>
+               <h1 class="CentrarItems">
                     <legend>
-                         Programa
+                         withoutString
                     </legend>
                </h1>
                <div class="form-group CentarItemsDiv">
