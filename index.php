@@ -15,48 +15,33 @@ include 'Header.php';
                 <div class="card-body">
                 <h5 class="card-title">¿Cómo iniciar?</h5>
                 <h6 class="card-subtitle mb-2 text-muted"></h6>
-                <p class="card-text">Solo selecciona la opción "Problemas" del menu que ves justo a tu izquierda, selecciona la categoria y el problema que mas te llame la atención!!!</p>
+                <p class="card-text">En la sección de "Problemas", el menú que ves justo a tu izquierda, selecciona la categoría y el problema que desees consultar./p>
                 </div>
                 </div>
-              </td>
               <td>
                 <div class="card" style="width: 18rem;">
                 <div class="card-body">
                 <h5 class="card-title">¿Qué es lo que sigue?</h5>
                 <h6 class="card-subtitle mb-2 text-muted"></h6>
-                <p class="card-text">Se mostrará una interfaz en la que lo primero que tendrás que hacer es dar click en el botón de
-                  <button class="btn btn-primary" type="submit">
-                     Descripcion
-                </button>
-                 en donde se mostrará el contenido del problema</p>
+                <p class="card-text">Se mostrará una interfaz en la que podrás visualizar un apartado para ingresar datos y algunas características del problema.</p>
                 </div>
                 </div>
               </td>
               <td>
                 <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                <h5 class="card-title">¿Y despues ?</h5>
+                <h5 class="card-title">¿Después?</h5>
                 <h6 class="card-subtitle mb-2 text-muted"></h6>
-                <p class="card-text">Una vez que analisaste el problema (MUY BIEN ANALIZADO :) ),
-                  deberás responder con los valores que satisfagan al problema en la parte de la izquierda, en las entradas de datos y dar cick en
-                  <button class="btn btn-primary" type="submit">
-                       Procesar
-                  </button></p>
+                <p class="card-text">En la sección para ingresar datos podrás ingresar los datos que tú desees para hacer uso de la solución que hemos desarrollado para los diferentes problemas, también puedes ingresar los datos de la parte de ‘Posibles Soluciones’, revisar en que está basado el problema en la parte de ‘Descripción’</p>
                 </div>
                 </div>
               </td>
               <td>
                 <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                <h5 class="card-title">Por Ultimo!!!!!!!</h5>
+                <h5 class="card-title">Por Ultimo</h5>
                 <h6 class="card-subtitle mb-2 text-muted"></h6>
-                <p class="card-text">Si al momento de procesar los datos que ingresaste están mal, no te sientas triste, para eso tenemos nuestro botón de
-                  <button class="btn btn-primary" type="submit">
-                       Soluciones
-                  </button>
-                  en dónde te daremos algunas soluciones, si sigues teniendo dudas pues <a href="#" class="card-link">comunicate</a> con nosotros
-                 </p>
-
+                <p class="card-text">Después de ingresarlos datos correspondientes, dale al botón de ‘Procesar’ y la solución aparecerá en el apartado de ‘Resultado’, que está situado en la parte inferior.</p>
                 </div>
                 </div>
               </td>
