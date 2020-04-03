@@ -1,8 +1,5 @@
 <?php
-
-/**
- *
- */
+//Problema No 5.- Fix 34
 class fix34
 {
 
@@ -23,7 +20,7 @@ public function profix34($nums=" ") {
 			$j++;
 
 	while($i < count($nums)) {
-		
+
 			if($nums[$i] == 3) {
 					$temp = $nums[$i+1];
 					$nums[$i+1] = $nums[$j];
