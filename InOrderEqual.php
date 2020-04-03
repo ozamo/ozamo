@@ -103,7 +103,7 @@
                         echo $Descripcion;
                          ?>
                       </p>
-                      <br><a href ="Programas/impinOrderEqual.php" target="_blank">Ver Codigo</a>
+                      <br><a href ="Programas/impinOrderEqual.php" target="_blank">Ver Codigo f</a>
                     </div>
                   </div>
                   <div class="card border-light mb-3" style="max-width: 20rem;">
