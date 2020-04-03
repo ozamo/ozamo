@@ -84,6 +84,7 @@
                            echo $Descripcion;
                             ?>
                          </p>
+                         <br><a href ="Programas/impwithoutString.php" target="_blank"> Ver Codigo </a>
                        </div>
                      </div>
                      <div class="card border-light mb-3" style="max-width: 20rem;">
