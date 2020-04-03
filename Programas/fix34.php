@@ -1,8 +1,5 @@
 <?php
-
-/**
- *
- */
+//Problema No 5.- Fix 34
 class fix34
 {
 

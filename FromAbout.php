@@ -1,5 +1,5 @@
 <?php
-  
+
   include 'Header.php';
 
 ?>
@@ -8,8 +8,8 @@
           <h1>
                ProblemRESULT
           </h1>
-          <p>
-               Somos un equipo dedicado al desarrollo de software, en pleno desarrollo de habilidades, contamos sabemos trabajar en equipo y dar solucion a los problemas, siempre tratando de cumplir con las expectativas
+          <p class= "CentarTextAbout">
+               Somos un equipo dedicado al desarrollo de software, en pleno desarrollo de habilidades, trabajamos en equipo para dar solucion a los problemas, siempre tratando de cumplir con las expectativas dictadas.
           </p>
           <h5>
                Integrantes

@@ -61,6 +61,7 @@
  	background: #ebebeb;
  	border-left: 4px solid #3498db;
  }
+
  .Programa{
    background: white;
    position: absolute;
@@ -83,6 +84,11 @@
 }
 .CentarItemsDiv2{
   padding-left: 175px;
+}
+.CentarTextAbout{
+  padding-left: 250px;
+  padding-right: 250px;
+  margin: 50px;
 }
 .Principal{
 
