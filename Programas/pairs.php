@@ -8,37 +8,17 @@
 			# code...
 		}
 
-		public function proPairs($cadena)
+		public function proPairs($cadena=array())
 		{
-			$result = "";
-			$count = 0;
+      $result=array();
+       for($cadena2 = array(); $cadena2<$cadena; $cadena2++){
 
+         $result=array_map(substr($cadena2,1) , substr($cadena2, strlen($cadena2)-1));
 
-			while (substr($cadena, $count, 1) == " ")
-			{
-				$count ++;
-			}
-
-			$result.= substr($cadena, $count, 1);
-
-
-			for(;$count < strlen($cadena); $count ++)
-			{
-				if(substr($cadena, $count, 1) == " ")
-				{
-					$result.= substr($cadena, $count - 1, 1);
-					if(!(substr($cadena, $count + 1, 1) == null))
-					{
-						$result.= substr($cadena, $count + 1, 1);
-
-
-					}
-				}
-			}
-        $result.= substr($cadena, strlen($cadena)-1, 1);
-			return $result;
-		}
-	}
+       }
+       $result=implode(" ",$result);
+       return $result;
+	}}
 
 	//Creacion de Objeto para la demas clases
 	$objePa = new pairs();
